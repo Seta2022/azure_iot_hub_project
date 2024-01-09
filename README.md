@@ -78,7 +78,7 @@ sen config
      
    ![powerbl](./img/powerbl.png)
 -För att skapa rapporter och dashboards i Power BI baserat på data från Cosmos DB, kan du använda följande fråga query. Optimera filtret 
-så att du kan få den information du vill ha ****: (https://github.com/Seta2022/azure/blob/main/azurefunktion/query)[query]. 
+så att du kan få den information du vill ha **: (https://github.com/Seta2022/azure/blob/main/azurefunktion/query)[query] **. 
   
 2. **Azure Function**: Anslut själva azure functionen till huben för att få in data.
 3. Checka själva inkommande data genom olika slags metoder eller med hjälp av andra tillgängliga tekniker, för att ta emot och övervaka inkommande data.
