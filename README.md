@@ -28,15 +28,16 @@ Detta projekt är en omfattande guide för att konfigurera och använda Azure Io
 - Cosmos DB för att lagra data.
   
 ---
-*setup* 
+   *Esp32 och DHT11 Setap* 
 
 ![ESP32 Image](./img/esp32bild.png)
 
-## Uppkoppling
+## Steg-för-steg
+steg för steg över hur man ska installera och använda biblioteken i Arduino IDE för projektet.
 
 ### Steg 1: 
-1. **Logga in på Azure-portalen**: Besök [Azure Portal](https://portal.azure.com) och logga in med ditt konto.
-2. **Skapa en ny IoT Hub**: Gå till "Create a resource" > "Internet of Things" > "IoT Hub".
+1. **Installera den senaste versionen av Arduino IDE från Arduino:s officiella webbplats**: Besök [Azure Portal](https://portal.azure.com) och logga in med ditt konto.
+2. **Installera ESP8266-kortpaketet i Arduino IDE genom att följa instruktionerna.**:  (http://arduino.esp8266.com/stable/package_esp8266com_index.json). 
 3. **Konfigurera IoT Hub**:
    - **Subscription**: Välj din prenumeration.
    - **Resource Group**: Skapa en ny resursgrupp eller välj en befintlig.
