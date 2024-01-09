@@ -14,6 +14,8 @@
 
 ## Översikt
 ![IoT Diagram](./img/iot-diagram.drawio.png)
+
+
 *Översikt på diagramet för IoT-flödet setup.*
 
 ## Introduktion
