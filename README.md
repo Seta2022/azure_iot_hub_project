@@ -5,12 +5,11 @@
 - [Introduktion](#introduktion)
   - [Komponenter](#komponenter)
 - [Instruktioner](#instruktioner)
-  - [Steg 1: Skicka Data från ESP32 till Azure IoT Hub](#steg-1-skicka-data-från-esp32-till-azure-iot-hub)
-  - [Steg 2: Uppkoppling](#uppkoppling)
-  - [Steg 3: Statistik](#statistik)
+  - [Steg 1: Nedladdningar](#steg-1-nedladdningar)
+  - [Steg 2: Uppkoppling](#steg-2-uppkoppling)
+  - [Steg 3: Statistik och Dataanalys](#steg-3-statistik-och-dataanalys)
 - [Säkerhet/Skalbarhet](#säkerhetskalbarhet)
 - [Slutsats](#slutsats)
-- [Azure Funktioner och Databas Kod](#azure-funktioner-och-databas-kod)
 
 ## Översikt
 ![IoT Diagram](./img/iot-diagram.drawio.png)
