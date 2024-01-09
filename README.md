@@ -10,7 +10,7 @@
 - powerbl
 - Cosmos DB
   
-## overview
+## översikt
 
 ## Steg-för-steg-guide
 
