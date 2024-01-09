@@ -79,7 +79,9 @@ sen config
 -Gör en stream Analytics i Azure som hör av sig dataströmmen från IoT-huben. Optimera filtret 
 så att du kan få den information du vill ha.
   
-2. **Azure Function**: Anslut själva azure functionen till huben för att få in data. Checka själva inkommande data genom olika slags metoder eller med hjälp av andra tillgängliga tekniker, för att ta emot och övervaka inkommande data. Ställ in Azure-funktionen så att den behandlar och analyserar data från sensorer som tas emot.
+2. **Azure Function**: Anslut själva azure functionen till huben för att få in data.
+3. Checka själva inkommande data genom olika slags metoder eller med hjälp av andra tillgängliga tekniker, för att ta emot och övervaka inkommande data.
+4. Ställ in Azure-funktionen så att den behandlar och analyserar data från sensorer som tas emot.
 ```
 //import azure.functions as func
 //from azure.cosmos import CosmosClient
