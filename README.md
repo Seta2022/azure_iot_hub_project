@@ -2,7 +2,7 @@
 # Konfigurera Azure IoT Hub för ESP32-S och DHT11
 
 ## Förutsättningar
-- Ett aktivt Azure-konto.
+- Ett aktivt [Azure-konto](#steg-1-skapa-en-iot-hub-i-azure).
 - IoT-hub
 - ESP32-S och DHT11 korrekt konfigurerad och ansluten.
 - Arduino IDE for programming the ESP32
