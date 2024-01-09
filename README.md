@@ -36,14 +36,14 @@ Detta projekt är en omfattande guide för att konfigurera och använda Azure Io
 
 ## Steg-för-steg Instruktioner
 
-### Steg 1: Nedladdningar
+###  Nedladdningar
 1. **Installera den senaste versionen av Arduino IDE från Arduino:s officiella webbplats**: Besök [Arduino](https://www.arduino.cc/en/software) och följ instruktionerna.
 2. **Installera ESP8266-paketet i Arduino IDE**: Lägg till (http://arduino.esp8266.com/stable/package_esp8266com_index.json) i din Arduino IDE.
 3. **Installera Azure SDK C-biblioteket**:
    - [ArdiunoJson](https://github.com/bblanchon/ArduinoJson): Installera ArduinoJson.
    - [PubSubClient](https://github.com/knolleary/pubsubclient): Installera PubSubClient.
 
-### Steg 2: Uppkoppling
+###  Uppkoppling
 1. **Gå till din IoT Hub**: Navigera till din IoT Hub i Azure-portalen.
 2. **Lägg till en enhet**:
    - Använd sensorn (temperatur- och fuktighetsmätare) för datainsamling.
@@ -60,11 +60,11 @@ Detta projekt är en omfattande guide för att konfigurera och använda Azure Io
 #define IOT_CONFIG_IOTHUB_FQDN "[your Azure IoT host name].azure-devices.net"
 #define IOT_CONFIG 
 
-### Steg 3: Statistik
+### Statistik
 - **Datainsamling via Cosmos DB**: Använd Cosmos DB för att lagra och hantera data från sensorerna.
 - **Azure Functions**: Anslut Azure Functions till IoT Hub för att bearbeta inkommande data.
 
-### Steg 4: Testning och Validering
+### Testning och Validering
 - **Verifiera anslutningen**: Kontrollera att din ESP32-enhet korrekt överför data till Azure IoT Hub.
 - **Felsökning**: Använd Azure IoT Hub's inbyggda monitor för att identifiera och åtgärda eventuella problem.
 
