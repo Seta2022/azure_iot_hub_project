@@ -1,0 +1,8 @@
+let
+    Source = AzureCosmosDB.Database("Cosmos DB URL"),
+    Database = Source{[id="Tempsensorn"]}[Databases],
+    Collection = Database{[id="Temp1"]}[Collections],
+    Dokument = Collection{[id="Dokument Id"]}[Documents],
+    TransformData = Dokument[Content] 
+in
+    TransformData
