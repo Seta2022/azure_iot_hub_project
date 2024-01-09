@@ -1,0 +1,21 @@
+#r "Microsoft.Azure.DocumentDB.Core"
+using System;
+using Microsoft.Azure.Documents;
+using Microsoft.Azure.Documents.Client;
+using System.Collections.Generic;
+using Newtonsoft.Json;
+
+public static async Task Run(string myIoTHubMessage, ILogger log)
+{
+    log.LogInformation($"C# IoT Hub trigger function processed a message: {myIoTHubMessage}");
+
+    var connectionString = Environment.GetEnvironmentVariable("CosmosDBConnection");
+    var databaseName = "<Tempsensorn>";
+    var collectionName = "<Temp1>";
+    var client = new DocumentClient(new Uri(connectionString), databaseName);
+
+    dynamic data = JsonConvert.DeserializeObject(myIoTHubMessage);
+    Uri collectionUri = UriFactory.CreateDocumentCollectionUri(databaseName, collectionName);
+
+    await client.CreateDocumentAsync(collectionUri, data);
+}
