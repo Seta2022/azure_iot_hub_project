@@ -74,7 +74,7 @@ steg för steg över hur man ska installera och använda biblioteken i Arduino I
 ### Steg 3: Skicka Data från ESP32 till Azure IoT Hub
 1. **Kodsetup för ESP32**:
    - Använd ett lämpligt utvecklingsverktyg för att programmera ESP32. Inkludera kod för att läsa data från DHT11-sensorn.
-   ![powerbl](/.img/powerbl.png)
+   ![powerbl](./img/powerbl.png)
    - Använd den kopierade "Primary Connection String" för att konfigurera anslutningen mellan ESP32 och Azure IoT Hub.
 2. **Skicka sensordata**: Skriv kod för att regelbundet läsa av sensordata och skicka den till Azure IoT Hub.
 
