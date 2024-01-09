@@ -3,12 +3,12 @@
 
 ## Förutsättningar
 - Ett aktivt [Azure-konto](#steg-1-skapa-en-iot-hub-i-azure).
-- IoT-hub
-- ESP32-S och DHT11 korrekt konfigurerad och ansluten.
-- Arduino IDE for programming the ESP32
-- stream analytics
-- powerbl
-- Cosmos DB
+- En [IoT-hub](#steg-1-skapa-en-iot-hub-i-azure) på ditt Azure-konto.
+- En [ESP32-S och DHT11](#steg-3-skicka-data-från-esp32-till-azure-iot-hub) som är korrekt konfigurerad och ansluten.
+- [Arduino IDE](#steg-3-skicka-data-från-esp32-till-azure-iot-hub) för att programmera ESP32.
+- [Stream Analytics](#testning-och-validering) för att bearbeta och analysera data.
+- [PowerBI](#slutsats) för att visualisera data.
+- [Cosmos DB](#slutsats) för att lagra data.
   
 ## översikt
 ![IoT Diagram](./img/iot-diagram.drawio.png)
