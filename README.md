@@ -67,15 +67,15 @@ steg för steg över hur man ska installera och använda biblioteken i Arduino I
 #define IOT_CONFIG_DEVICE_ID "Device ID"
 #define IOT_CONFIG_DEVICE_KEY "Device Key"
 
-3. **Cosmo Db**:
-   - När enheten är skapad, klicka på dess namn.
-   - Kopiera "Primary Connection String". Detta används senare för att ansluta ESP32 till IoT Hub.
-
+2.5 **Cosmo Db**:
+   - Datainsamling sker via Cosmos DB-databas nosql för lagra data för sensorerna.
+   
+ **Azure Functions 
 ### Steg 3: Skicka Data från ESP32 till Azure IoT Hub
-1. **Kodsetup för ESP32**:
-   - Använd ett lämpligt utvecklingsverktyg för att programmera ESP32. Inkludera kod för att läsa data från DHT11-sensorn.
+1. **Datacheck**:
+   - Använd ett lämpligt utvecklingsverktyg för att Se på hur man kan se data. Inkludera tid ,datum och realtid för att läsa data från DHT11-sensorn. Bästa fall powerbl 
    ![powerbl](./img/powerbl.png)
-   - Använd den kopierade "Primary Connection String" för att konfigurera anslutningen mellan ESP32 och Azure IoT Hub.
+  
 2. **Skicka sensordata**: Skriv kod för att regelbundet läsa av sensordata och skicka den till Azure IoT Hub.
 
 ## Testning och validering
@@ -95,6 +95,6 @@ Implementera MQTTS-protokollet: Genom att använda MQTTS (MQTT Secure), kan vi h
 
 
 ## Slutsats
-Genom att följa dessa steg kan du framgångsrikt konfigurera Azure IoT Hub för att samla in data från en ESP32-S kopplad till en DHT11-sensor. Denna data kan sedan användas för vidare analys och visualisering, till exempel i PowerBI.
+Genom att implementera dessa steg kan du effektivt sätta upp Azure IoT Hub för att samla in information från en ESP32-S ansluten till en DHT11-sensor. Insamlad data kan därefter användas för analys och visualisering. I detta projekt kombineras ESP32 med Azure IoT Hub för att mäta temperatur och luftfuktighet. Informationen lagras i Cosmos DB och presenteras för användaren genom realtidsvisualisering med Power BI. Projektet erbjuder en komplett lösning för att övervaka och analysera miljöförhållanden.
 
 
