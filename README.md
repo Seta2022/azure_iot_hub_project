@@ -11,7 +11,7 @@
 - Cosmos DB
   
 ## översikt
-
+![IoT Diagram](./img/iot-diagram.drawio.png)
 ## Steg-för-steg-guide
 
 ### Steg 1: Skapa en IoT Hub i Azure
