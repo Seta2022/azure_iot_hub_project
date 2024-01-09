@@ -70,6 +70,7 @@ Detta projekt är en omfattande guide för att konfigurera och använda Azure Io
 - **Azure Functions för datamanipulering**: Utveckla Azure Functions för att bearbeta och förbereda insamlad data för analys. Detta kan inkludera datarensning, normalisering och transformation för att säkerställa att datan är användbar och meningsfull för slutanvändaren.
 
 ### Steg 4: Visualisering med Power BI
+![Power BI Visualization](img/powerbi.png)
 - **Integration med Power BI**: Lär dig att integrera data från Cosmos DB med Power BI för att skapa dynamiska och insiktsfulla visualiseringar. Detta steg fokuserar på att överföra data från Cosmos DB till Power BI och konfigurera datakällan korrekt.
 - **Utforma Dashboard i Power BI**: Skapa anpassade dashboards i Power BI som visualiserar temperaturdata i realtid. Här utnyttjar du Power BI:s avancerade visualiseringsverktyg för att skapa klara och insiktsfulla grafiska representationer av dina data.
 - **Använda Query Functions för detaljerad analys**: Utveckla och tillämpa frågefunktioner i Power BI för att extrahera specifika insikter från temperaturdatan. Detta kan inkludera tidsbaserade trender, jämförelser mellan olika tidpunkter eller områden, och avancerad analys som hjälper till att identifiera mönster eller avvikelser i datan.
