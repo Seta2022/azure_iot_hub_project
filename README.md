@@ -5,10 +5,11 @@
 - [Översikt](#översikt)
 - [Introduktion](#Introduktion)
 -   [Komponenter](#Komponenter) 
-- [Instruktioner](#steg-1-skicka-data-från-esp32-till-azure-iot-hub) .
-- [Stream Analytics](#testning-och-validering) för att bearbeta och analysera data.
-- [PowerBI](#slutsats) för att visualisera data.
-- [Cosmos DB](#slutsats) för att lagra data.
+- [Instruktioner](#steg-1-skicka-data-från-esp32-till-azure-iot-hub) 
+- [uppkoppling](#uppkoppling) 
+-[statistik](#statistik)
+- [säkerhet/skalbarhet](#testning-och-validering) 
+- [Slutsats](#slutsats)
   
 ## översikt
 ![IoT Diagram](./img/iot-diagram.drawio.png)
@@ -34,18 +35,18 @@ Detta projekt är en omfattande guide för att konfigurera och använda Azure Io
 ![ESP32 Image](./img/esp32bild.png)
 
 ---
-![hur den ska intryckas](./img/diagram_presentation.svg) 
+![hur den ska intryckas för komponenterna till molnet](./img/diagram_presentation.svg) 
 ## Steg-för-steg
 steg för steg över hur man ska installera och använda biblioteken i Arduino IDE för projektet.
 
-### Steg 1: 
+### Steg 1 Nedladdningar: 
 1. **Installera den senaste versionen av Arduino IDE från Arduino:s officiella webbplats**: Besök [Arduino](https://www.arduino.cc/en/software) och logga in med ditt konto.
 2. **Installera ESP8266-paketet i Arduino IDE genom att följa instruktionerna.**:  (http://arduino.esp8266.com/stable/package_esp8266com_index.json). 
 3. **installera [Azure SDK] C-biblotektet(https://github.com/Azure/azure-sdk-for-c-arduino) **:
    - **ArdiunoJson**: (https://github.com/bblanchon/ArduinoJson) installera [ArduinoJson].
    - **PubSubClient**(https://github.com/knolleary/pubsubclient)Installera [PubSubClient]. 
 
-### Steg 2: Registrera din Enhet
+### Steg 2: Uppkoppling
 1. **Gå till din IoT Hub**: Navigera till din nyligen skapade IoT Hub i Azure-portalen.
 2. **Lägg till en enhet**:
    - Gå till "IoT devices" i menyn till vänster.
@@ -59,8 +60,7 @@ steg för steg över hur man ska installera och använda biblioteken i Arduino I
 
 ### Steg 3: Skicka Data från ESP32 till Azure IoT Hub
 1. **Kodsetup för ESP32**:
-   - Använd ett lämpligt utvecklingsverktyg för att programmera ESP32.
-   - Inkludera kod för att läsa data från DHT11-sensorn.
+   - Använd ett lämpligt utvecklingsverktyg för att programmera ESP32. Inkludera kod för att läsa data från DHT11-sensorn.
    - Importera bibliotek för att ansluta till Azure IoT Hub.
    - Använd den kopierade "Primary Connection String" för att konfigurera anslutningen mellan ESP32 och Azure IoT Hub.
 2. **Skicka sensordata**: Skriv kod för att regelbundet läsa av sensordata och skicka den till Azure IoT Hub.
@@ -69,5 +69,19 @@ steg för steg över hur man ska installera och använda biblioteken i Arduino I
 - **Verifiera anslutningen**: Kontrollera i Azure IoT Hub under "IoT devices" att data mottas från din ESP32-enhet.
 - **Felsökning**: Använd verktyg som Azure IoT Hub's inbyggda monitor för att felsöka eventuella problem med dataöverföringen.
 
+## Säkerhet och Skalbarhet
+Vissa åtgärder som kan införas för att höja säkerhetsnivån och skalbarhet.
+
+Integrera Azure Device Provisioning Service: Denna tjänst förenklar införandet av nya IoT-enheter genom att automatisera registreringsprocessen och centralisera hanteringen av nycklar och certifikat. Detta förbättrar säkerheten och effektiviserar implementeringen av nya enheter, vilket bidrar till ökad skalbarhet i projektet.
+
+Användning av Azure Key Vault, certifikat och HSM: Dessa verktyg är avgörande för att skydda känsliga data som nycklar och lösenord. Med Azure Key Vault, certifikat och Hardware Security Modules (HSM) kan vi garantera att känslig information skyddas och inte riskerar att läcka ut via firmware eller bli oavsiktligt uppladdad till arkiv.
+
+Uttnyttja Azures flexibla betalningsplaner: Azures skalbara och anpassningsbara betalningsplaner möjliggör effektiv skalning baserat på användningsmönster. Detta hjälper till att bibehålla projektets skalbarhet samtidigt som det kontrollerar kostnaderna.
+
+Implementera MQTTS-protokollet: Genom att använda MQTTS (MQTT Secure), kan vi höja säkerhetsnivån vid dataöverföring. Genom krypterad kommunikation mellan IoT-noder, såsom Node-MCU ESP8266, och Azure IoT Hub via MQTT-protokollet, säkerställer vi en skyddad informationsöverföring och minskar risken för avlyssning och obehörig åtkomst.
+
+
 ## Slutsats
 Genom att följa dessa steg kan du framgångsrikt konfigurera Azure IoT Hub för att samla in data från en ESP32-S kopplad till en DHT11-sensor. Denna data kan sedan användas för vidare analys och visualisering, till exempel i PowerBI.
+
+
