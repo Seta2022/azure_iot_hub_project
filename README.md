@@ -5,7 +5,7 @@
 - [Översikt](#översikt)
 - [Introduktion](#Introduktion)
 -   [Komponenter](#Komponenter) 
-- [](#steg-1-skicka-data-från-esp32-till-azure-iot-hub) .
+- [Instruktioner](#steg-1-skicka-data-från-esp32-till-azure-iot-hub) .
 - [Stream Analytics](#testning-och-validering) för att bearbeta och analysera data.
 - [PowerBI](#slutsats) för att visualisera data.
 - [Cosmos DB](#slutsats) för att lagra data.
@@ -15,6 +15,7 @@
 
 *översikt på Diagramet för IoT flödet setup.*
 --- 
+
 ## Introduktion
 Detta projekt är en omfattande guide för att konfigurera och använda Azure IoT Hub för att samla in och analysera data från en ESP32-S enhet kopplad till en DHT11-sensor. Genom att följa denna guide kommer du att kunna skapa en IoT-lösning som kan samla in, bearbeta och visualisera data i realtid. Detta kan vara särskilt användbart för olika IoT-applikationer, som att övervaka miljöförhållanden, skapa smarta hemlösningar eller för att förbättra affärsprocesser genom att använda datainsikter. Slutresultatet kommer att vara en fullt fungerande IoT-lösning som kan skala upp för att hantera stora mängder data och ge värdefulla insikter genom visualisering i PowerBI.
 
@@ -32,6 +33,8 @@ Detta projekt är en omfattande guide för att konfigurera och använda Azure Io
 
 ![ESP32 Image](./img/esp32bild.png)
 
+---
+![hur den ska intryckas](./img/diagram_presentation.svg) 
 ## Steg-för-steg
 steg för steg över hur man ska installera och använda biblioteken i Arduino IDE för projektet.
 
