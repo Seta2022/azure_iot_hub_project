@@ -52,7 +52,7 @@ Detta projekt är en omfattande guide för att konfigurera och använda Azure Io
 2. **Lägg till en enhet**:
    - Använd sensorn (temperatur- och fuktighetsmätare) för datainsamling.
    - Kolla in datainsamlingen på din IoT-enhet.
-   ![Data Statistik](.img/powerbl.png)
+   ![Data Statistik](./img/powerbl.png)
    - Bekräfta att enheten, t.ex. "ESP32-DHT11-Device", är insamlad och tar emot data.
    - Lämna "Authentication type" som "Symmetric Key".
 
