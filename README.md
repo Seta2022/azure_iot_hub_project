@@ -75,15 +75,15 @@ sen config
 ### Steg 3: Skicka Data från ESP32 till Azure IoT Hub
 1. **Datacheck**:
    - Använd ett lämpligt utvecklingsverktyg för att Se på hur man kan se data. Inkludera tid ,datum och realtid för att läsa data från DHT11-sensorn. Bästa fall powerbl
-     ** [basen] (https://github.com/Seta2022/azure/blob/main/azurefunktion/databas.C%23)till sql **:
-   - **ArdiunoJson**: (https://github.com/bblanchon/ArduinoJson) installera [ArduinoJson]. 
+     
    ![powerbl](./img/powerbl.png)
--Gör en stream Analytics i Azure som hör av sig dataströmmen från IoT-huben. Optimera filtret 
-så att du kan få den information du vill ha.
+-För att skapa rapporter och dashboards i Power BI baserat på data från Cosmos DB, kan du använda följande fråga query. Optimera filtret 
+så att du kan få den information du vill ha ****: (https://github.com/Seta2022/azure/blob/main/azurefunktion/query)[query]. 
   
 2. **Azure Function**: Anslut själva azure functionen till huben för att få in data.
 3. Checka själva inkommande data genom olika slags metoder eller med hjälp av andra tillgängliga tekniker, för att ta emot och övervaka inkommande data.
 4. Ställ in Azure-funktionen så att den behandlar och analyserar data från sensorer som tas emot.
+ ** [basen] (https://github.com/Seta2022/azure/blob/main/azurefunktion/databas.C%23)till sql **:
 ```
 //import azure.functions as func
 //from azure.cosmos import CosmosClient
