@@ -5,7 +5,7 @@
 - [Översikt](#översikt)
 - [Introduktion](#Introduktion)
 -   [Komponenter](#Komponenter) 
-- [Arduino IDE](#steg-3-skicka-data-från-esp32-till-azure-iot-hub) för att programmera ESP32.
+- [](#steg-1-skicka-data-från-esp32-till-azure-iot-hub) .
 - [Stream Analytics](#testning-och-validering) för att bearbeta och analysera data.
 - [PowerBI](#slutsats) för att visualisera data.
 - [Cosmos DB](#slutsats) för att lagra data.
@@ -19,17 +19,20 @@
 Detta projekt är en omfattande guide för att konfigurera och använda Azure IoT Hub för att samla in och analysera data från en ESP32-S enhet kopplad till en DHT11-sensor. Genom att följa denna guide kommer du att kunna skapa en IoT-lösning som kan samla in, bearbeta och visualisera data i realtid. Detta kan vara särskilt användbart för olika IoT-applikationer, som att övervaka miljöförhållanden, skapa smarta hemlösningar eller för att förbättra affärsprocesser genom att använda datainsikter. Slutresultatet kommer att vara en fullt fungerande IoT-lösning som kan skala upp för att hantera stora mängder data och ge värdefulla insikter genom visualisering i PowerBI.
 
 ## Komponenter
-- Ett aktivt [Azure-konto](#steg-1-skapa-en-iot-hub-i-azure).
-- En [IoT-hub](#steg-1-skapa-en-iot-hub-i-azure) på ditt Azure-konto.
-- En [ESP32-S och DHT11](#steg-3-skicka-data-från-esp32-till-azure-iot-hub) som är korrekt konfigurerad och ansluten.
-- [Arduino IDE](#steg-3-skicka-data-från-esp32-till-azure-iot-hub) för att programmera ESP32.
-- [Stream Analytics](#testning-och-validering) för att bearbeta och analysera data.
-- [PowerBI](#slutsats) för att visualisera data.
-- [Cosmos DB](#slutsats) för att lagra data.
+- Ett aktivt Azure-konto.
+- En IoT-hub på ditt Azure-konto.
+- En ESP32-S och DHT11 som är korrekt konfigurerad och ansluten.
+- Arduino IDE för att programmera ESP32.
+- Stream Analytics för att bearbeta och analysera data.
+- PowerBI för att visualisera data.
+- Cosmos DB för att lagra data.
+  
+---
+*setup* 
 
 ![ESP32 Image](./img/esp32bild.png)
 
-## Steg-för-steg-
+## Uppkoppling
 
 ### Steg 1: 
 1. **Logga in på Azure-portalen**: Besök [Azure Portal](https://portal.azure.com) och logga in med ditt konto.
