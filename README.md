@@ -67,14 +67,14 @@ steg för steg över hur man ska installera och använda biblioteken i Arduino I
 #define IOT_CONFIG_DEVICE_ID "Device ID"
 #define IOT_CONFIG_DEVICE_KEY "Device Key"
 
-3. **Kopiera Anslutningssträngen**:
+3. **Cosmo Db**:
    - När enheten är skapad, klicka på dess namn.
    - Kopiera "Primary Connection String". Detta används senare för att ansluta ESP32 till IoT Hub.
 
 ### Steg 3: Skicka Data från ESP32 till Azure IoT Hub
 1. **Kodsetup för ESP32**:
    - Använd ett lämpligt utvecklingsverktyg för att programmera ESP32. Inkludera kod för att läsa data från DHT11-sensorn.
-   - Importera bibliotek för att ansluta till Azure IoT Hub.
+   [powerbl](/.img/powerbl.png)
    - Använd den kopierade "Primary Connection String" för att konfigurera anslutningen mellan ESP32 och Azure IoT Hub.
 2. **Skicka sensordata**: Skriv kod för att regelbundet läsa av sensordata och skicka den till Azure IoT Hub.
 
