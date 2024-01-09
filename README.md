@@ -76,12 +76,15 @@ sen config
 1. **Datacheck**:
    - Använd ett lämpligt utvecklingsverktyg för att Se på hur man kan se data. Inkludera tid ,datum och realtid för att läsa data från DHT11-sensorn. Bästa fall powerbl 
    ![powerbl](./img/powerbl.png)
+-Gör en stream Analytics i Azure som hör av sig dataströmmen från IoT-huben. Optimera filtret 
+så att du kan få den information du vill ha.
   
-2. **Azure Function**: Anslut själva azure functionen till huben för att få in data. Checka själva 
+2. **Azure Function**: Anslut själva azure functionen till huben för att få in data. Checka själva inkommande data genom olika slags metoder eller med hjälp av andra tillgängliga tekniker, för att ta emot och övervaka inkommande data. Ställ in Azure-funktionen så att den behandlar och analyserar data från sensorer som tas emot.
 ```
 //import azure.functions as func
 //from azure.cosmos import CosmosClient
 ```
+
 ## Testning och validering
 - **Verifiera anslutningen**: Kontrollera i Azure IoT Hub under "IoT devices" att data mottas från din ESP32-enhet.
 - **Felsökning**: Använd verktyg som Azure IoT Hub's inbyggda monitor för att felsöka eventuella problem med dataöverföringen.
