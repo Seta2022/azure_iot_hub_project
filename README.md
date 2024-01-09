@@ -38,13 +38,9 @@ steg för steg över hur man ska installera och använda biblioteken i Arduino I
 ### Steg 1: 
 1. **Installera den senaste versionen av Arduino IDE från Arduino:s officiella webbplats**: Besök [Arduino](https://www.arduino.cc/en/software) och logga in med ditt konto.
 2. **Installera ESP8266-paketet i Arduino IDE genom att följa instruktionerna.**:  (http://arduino.esp8266.com/stable/package_esp8266com_index.json). 
-3. **Konfigurera IoT Hub**:
-   - **Subscription**: Välj din prenumeration.
-   - **Resource Group**: Skapa en ny resursgrupp eller välj en befintlig.
-   - **Region**: Välj den region som är närmast dig.
-   - **IoT Hub Name**: Ange ett unikt namn för din IoT Hub.
-4. **Storlek och skalning**: Välj din föredragna storlek och skalningsnivå. För en testsetup är det ofta tillräckligt med den fria nivån.
-5. **Granska och skapa**: Granska inställningarna och klicka på "Create" för att skapa din IoT Hub.
+3. **installera [Azure SDK] C-biblotektet(https://github.com/Azure/azure-sdk-for-c-arduino) **:
+   - **ArdiunoJson**: (https://github.com/bblanchon/ArduinoJson) installera [ArduinoJson].
+   - **PubSubClient**(https://github.com/knolleary/pubsubclient)Installera [PubSubClient]. 
 
 ### Steg 2: Registrera din Enhet
 1. **Gå till din IoT Hub**: Navigera till din nyligen skapade IoT Hub i Azure-portalen.
