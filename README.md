@@ -8,7 +8,7 @@
   - [Steg 1: Skicka Data från ESP32 till Azure IoT Hub](#steg-1-skicka-data-från-esp32-till-azure-iot-hub)
   - [Steg 2: Uppkoppling](#uppkoppling)
   - [Steg 3: Statistik](#statistik)
-- [Säkerhet/Skalbarhet](#säkerhet/skalbarhet)
+- [Säkerhet/Skalbarhet](#säkerhetskalbarhet)
 - [Slutsats](#slutsats)
 - [Azure Funktioner och Databas Kod](#azure-funktioner-och-databas-kod)
 
