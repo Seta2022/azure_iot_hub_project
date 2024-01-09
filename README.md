@@ -68,11 +68,9 @@ sen config
 #define IOT_CONFIG_DEVICE_ID "Device ID"
 #define IOT_CONFIG_DEVICE_KEY "Device Key"
 ```
-2.5 **Cosmo Db**:
-   - Datainsamling sker via Cosmos DB-databas nosql för lagra data för sensorerna.
    
  **Azure Functions 
-### Steg 3: Skicka Data från ESP32 till Azure IoT Hub
+### Steg 3: Skicka Data från ESP32 till PowerBI
 1. **Datacheck**:
    - Använd ett lämpligt utvecklingsverktyg för att Se på hur man kan se data. Inkludera tid ,datum och realtid för att läsa data från DHT11-sensorn. Bästa fall powerbl
      
@@ -81,8 +79,9 @@ sen config
 så att du kan få den information du vill ha **: (https://github.com/Seta2022/azure/blob/main/azurefunktion/query)[query] **. 
   
 2. **Azure Function**: Anslut själva azure functionen till huben för att få in data.
-3. Checka själva inkommande data genom olika slags metoder eller med hjälp av andra tillgängliga tekniker, för att ta emot och övervaka inkommande data.
-4. Ställ in Azure-funktionen så att den behandlar och analyserar data från sensorer som tas emot.
+3. Datainsamling sker via Cosmos DB-databas nosql för lagra data för sensorerna.
+4. Checka själva inkommande data genom olika slags metoder eller med hjälp av andra tillgängliga tekniker, för att ta emot och övervaka inkommande data.
+5. Ställ in Azure-funktionen så att den behandlar och analyserar data från sensorer som tas emot.
  ** [basen] (https://github.com/Seta2022/azure/blob/main/azurefunktion/databas.C%23)till sql **:
 ```
 //import azure.functions as func
