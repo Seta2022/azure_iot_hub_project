@@ -3,8 +3,8 @@
 
 ## innehållsförteckning
 - [Översikt](#översikt)
-- [Komponenter](#Komponenter)
--  [ESP32-S och DHT11](#steg-3-skicka-data-från-esp32-till-azure-iot-hub) 
+- [Introduktion](#Introduktion)
+-   [Komponenter](#Komponenter) 
 - [Arduino IDE](#steg-3-skicka-data-från-esp32-till-azure-iot-hub) för att programmera ESP32.
 - [Stream Analytics](#testning-och-validering) för att bearbeta och analysera data.
 - [PowerBI](#slutsats) för att visualisera data.
@@ -27,9 +27,11 @@ Detta projekt är en omfattande guide för att konfigurera och använda Azure Io
 - [PowerBI](#slutsats) för att visualisera data.
 - [Cosmos DB](#slutsats) för att lagra data.
 
-## Steg-för-steg-guide
+![ESP32 Image](./img/esp32bild.png)
 
-### Steg 1: Skapa en IoT Hub i Azure
+## Steg-för-steg-
+
+### Steg 1: 
 1. **Logga in på Azure-portalen**: Besök [Azure Portal](https://portal.azure.com) och logga in med ditt konto.
 2. **Skapa en ny IoT Hub**: Gå till "Create a resource" > "Internet of Things" > "IoT Hub".
 3. **Konfigurera IoT Hub**:
