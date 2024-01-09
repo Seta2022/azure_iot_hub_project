@@ -2,8 +2,8 @@
 # Konfigurera Azure IoT Hub för ESP32-S och DHT11
 
 ## innehållsförteckning
-- Översikt(#översikt)
-- Komponenter(#Komponenter)
+- [Översikt](#översikt)
+- [Komponenter](#Komponenter)
 -  [ESP32-S och DHT11](#steg-3-skicka-data-från-esp32-till-azure-iot-hub) 
 - [Arduino IDE](#steg-3-skicka-data-från-esp32-till-azure-iot-hub) för att programmera ESP32.
 - [Stream Analytics](#testning-och-validering) för att bearbeta och analysera data.
