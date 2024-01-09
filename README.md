@@ -49,11 +49,22 @@ steg för steg över hur man ska installera och använda biblioteken i Arduino I
 ### Steg 2: Uppkoppling
 1. **Gå till din IoT Hub**: Navigera till din nyligen skapade IoT Hub i Azure-portalen.
 2. **Lägg till en enhet**:
-   - Gå till "IoT devices" i menyn till vänster.
+   - kolla in på insamlingen på data hos IoT-enhen.
+     ![data](.img/statistik.png)
    - Klicka på "New" för att lägga till en ny enhet.
    - Ange ett namn för din enhet, t.ex. "ESP32-DHT11-Device".
    - Lämna "Authentication type" som "Symmetric Key".
-   - Klicka på "Save".
+  
+     
+// Azure IoT
+#define IOT_CONFIG_IOTHUB_FQDN "[your Azure IoT host name].azure-devices.net"
+#define IOT_CONFIG_DEVICE_ID "Device ID"
+#define IOT_CONFIG_DEVICE_KEY "Device Key"
+---
+// Wifi
+#define IOT_CONFIG_WIFI_SSID "SSID"
+#define IOT_CONFIG_WIFI_PASSWORD "PWD"
+
 3. **Kopiera Anslutningssträngen**:
    - När enheten är skapad, klicka på dess namn.
    - Kopiera "Primary Connection String". Detta används senare för att ansluta ESP32 till IoT Hub.
