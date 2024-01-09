@@ -29,9 +29,11 @@ Detta projekt är en omfattande guide för att konfigurera och använda Azure Io
 - Cosmos DB för att lagra data.
 
 ![ESP32 Image](./img/esp32bild.png)
+
 *Esp32 och DHT11 Setup*
 
 ![Diagram Presentation](./img/diagram_presentation.svg)
+
 *Hur komponenterna ska integreras med molnet*
 
 ## Steg-för-steg Instruktioner
