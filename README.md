@@ -50,7 +50,7 @@ steg för steg över hur man ska installera och använda biblioteken i Arduino I
 1. **Gå till din IoT Hub**: Navigera till din nyligen skapade IoT Hub i Azure-portalen.
 2. **Lägg till en enhet**:
    - kolla in på insamlingen på data hos IoT-enhen.
-     ![data](.img/statistik.png)
+     ![data](./img/statistik.png)
    - Klicka på "New" för att lägga till en ny enhet.
    - Ange ett namn för din enhet, t.ex. "ESP32-DHT11-Device".
    - Lämna "Authentication type" som "Symmetric Key".
