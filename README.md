@@ -54,19 +54,20 @@ steg för steg över hur man ska installera och använda biblioteken i Arduino I
      ![data](./img/statistik.png)
    -  IoThubenhet ska bekräfta att t.ex. "ESP32-DHT11-Device" är insamlad och tar emot data.
    - Lämna "Authentication type" som "Symmetric Key"  för wifi-anslutning och uppdatera den i filen config.
-,,,
 
+
+```
 // Wifi
 #define IOT_CONFIG_WIFI_SSID "SSID"
 #define IOT_CONFIG_WIFI_PASSWORD "PWD"
-,,,
-
-
+```
+sen config
+```
 // Azure IoT Config
 #define IOT_CONFIG_IOTHUB_FQDN "[your Azure IoT host name].azure-devices.net"
 #define IOT_CONFIG_DEVICE_ID "Device ID"
 #define IOT_CONFIG_DEVICE_KEY "Device Key"
-
+```
 2.5 **Cosmo Db**:
    - Datainsamling sker via Cosmos DB-databas nosql för lagra data för sensorerna.
    
@@ -76,13 +77,16 @@ steg för steg över hur man ska installera och använda biblioteken i Arduino I
    - Använd ett lämpligt utvecklingsverktyg för att Se på hur man kan se data. Inkludera tid ,datum och realtid för att läsa data från DHT11-sensorn. Bästa fall powerbl 
    ![powerbl](./img/powerbl.png)
   
-2. **Skicka sensordata**: Skriv kod för att regelbundet läsa av sensordata och skicka den till Azure IoT Hub.
-
+2. **Azure Function**: Anslut själva azure functionen till huben för att få in data. Checka själva 
+```
+//import azure.functions as func
+//from azure.cosmos import CosmosClient
+```
 ## Testning och validering
 - **Verifiera anslutningen**: Kontrollera i Azure IoT Hub under "IoT devices" att data mottas från din ESP32-enhet.
 - **Felsökning**: Använd verktyg som Azure IoT Hub's inbyggda monitor för att felsöka eventuella problem med dataöverföringen.
 
-## Säkerhet och Skalbarhet
+## Säkerhet/Skalbarhet
 Vissa åtgärder som kan införas för att höja säkerhetsnivån och skalbarhet.
 
 Integrera Azure Device Provisioning Service: Denna tjänst förenklar införandet av nya IoT-enheter genom att automatisera registreringsprocessen och centralisera hanteringen av nycklar och certifikat. Detta förbättrar säkerheten och effektiviserar implementeringen av nya enheter, vilket bidrar till ökad skalbarhet i projektet.
